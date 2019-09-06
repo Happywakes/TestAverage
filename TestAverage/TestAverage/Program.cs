@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace TestAverage
 {
@@ -6,7 +7,27 @@ namespace TestAverage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("How many scores do you have?");
+            int ScoreNumber = int.Parse(Console.ReadLine());
+
+            int[] ScoreGroup = new int[ScoreNumber];
+
+            for (int i = 0; i < ScoreNumber; i++)
+            {
+                Console.WriteLine("What is score number " + (i + 1) + " ?");
+                ScoreGroup[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine("Your avg is " + ScoreGroup.Average() + ".");
+
+           
+            
+
+
+
+
+
+
         }
     }
 }
