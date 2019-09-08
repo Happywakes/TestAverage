@@ -8,11 +8,11 @@ namespace TestAverage
         {
             Console.WriteLine("How many scores do you have?");
 
-            
             int ScoreNumber = int.Parse(Console.ReadLine());
+
             if(ScoreNumber == 0)
             {
-                Console.WriteLine("Blame Billy as he never scores.");
+                Console.WriteLine("Your average score is zer0. Blame Billy as he never scores.");
             }
             else
             {
@@ -24,8 +24,6 @@ namespace TestAverage
                     ScoreGroup[i] = int.Parse(Console.ReadLine());
                 }
                 Console.WriteLine("Your avg is " + ScoreGroup.Average() + ".");
-
-
             }
         }    
     }
